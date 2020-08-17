@@ -1,5 +1,13 @@
 # Stripe connect Payment request button issue
 
+## Now Solved!
+
+_ONLY_ the API must be used to register Apple Pay domains for connect. If the dashboard is used
+then it will not work, even then making API calls will not fix it without first deleting the records
+in the dashboard, and then calling the API.
+
+So in summary, skipping 5 & 6 in the "Steps to reproduce" fixes the issue.
+
 ## How this repo was created
 
 1. `npx create-react-app stripe-connect-prb-repro --template typescript`
